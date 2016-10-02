@@ -14,6 +14,11 @@
 		3B9F518E1D870D4B00DB8F21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B9F518C1D870D4B00DB8F21 /* LaunchScreen.storyboard */; };
 		3B9F51991D870D4B00DB8F21 /* ColorfulActivityIndicatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9F51981D870D4B00DB8F21 /* ColorfulActivityIndicatorTests.swift */; };
 		3B9F51A41D870D4B00DB8F21 /* ColorfulActivityIndicatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9F51A31D870D4B00DB8F21 /* ColorfulActivityIndicatorUITests.swift */; };
+		3B9F51C01D87126300DB8F21 /* CircularGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9F51BC1D87126300DB8F21 /* CircularGradient.swift */; };
+		3B9F51C11D87126300DB8F21 /* RingLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9F51BD1D87126300DB8F21 /* RingLayer.swift */; };
+		3B9F51C21D87126300DB8F21 /* RingTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9F51BE1D87126300DB8F21 /* RingTip.swift */; };
+		3B9F51C31D87126300DB8F21 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9F51BF1D87126300DB8F21 /* Utility.swift */; };
+		3BD8C4651D90471600608F58 /* ColorfulActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD8C4641D90471600608F58 /* ColorfulActivityIndicator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		3B9F519F1D870D4B00DB8F21 /* ColorfulActivityIndicatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColorfulActivityIndicatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B9F51A31D870D4B00DB8F21 /* ColorfulActivityIndicatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorfulActivityIndicatorUITests.swift; sourceTree = "<group>"; };
 		3B9F51A51D870D4B00DB8F21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B9F51BC1D87126300DB8F21 /* CircularGradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularGradient.swift; sourceTree = "<group>"; };
+		3B9F51BD1D87126300DB8F21 /* RingLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RingLayer.swift; sourceTree = "<group>"; };
+		3B9F51BE1D87126300DB8F21 /* RingTip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RingTip.swift; sourceTree = "<group>"; };
+		3B9F51BF1D87126300DB8F21 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		3BD8C4641D90471600608F58 /* ColorfulActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorfulActivityIndicator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +107,7 @@
 		3B9F51821D870D4B00DB8F21 /* ColorfulActivityIndicator */ = {
 			isa = PBXGroup;
 			children = (
+				3B9F51B11D870D5C00DB8F21 /* Control */,
 				3B9F51831D870D4B00DB8F21 /* AppDelegate.swift */,
 				3B9F51851D870D4B00DB8F21 /* ViewController.swift */,
 				3B9F51871D870D4B00DB8F21 /* Main.storyboard */,
@@ -123,6 +134,26 @@
 				3B9F51A51D870D4B00DB8F21 /* Info.plist */,
 			);
 			path = ColorfulActivityIndicatorUITests;
+			sourceTree = "<group>";
+		};
+		3B9F51B11D870D5C00DB8F21 /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				3B9F51BB1D87124000DB8F21 /* Layers */,
+				3BD8C4641D90471600608F58 /* ColorfulActivityIndicator.swift */,
+			);
+			path = Control;
+			sourceTree = "<group>";
+		};
+		3B9F51BB1D87124000DB8F21 /* Layers */ = {
+			isa = PBXGroup;
+			children = (
+				3B9F51BC1D87126300DB8F21 /* CircularGradient.swift */,
+				3B9F51BD1D87126300DB8F21 /* RingLayer.swift */,
+				3B9F51BE1D87126300DB8F21 /* RingTip.swift */,
+				3B9F51BF1D87126300DB8F21 /* Utility.swift */,
+			);
+			path = Layers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,18 +219,22 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = Nattapong;
 				TargetAttributes = {
 					3B9F517F1D870D4B00DB8F21 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = MCP73L8734;
+						LastSwiftMigration = 0800;
 					};
 					3B9F51931D870D4B00DB8F21 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = 3B9F517F1D870D4B00DB8F21;
 					};
 					3B9F519E1D870D4B00DB8F21 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = 3B9F517F1D870D4B00DB8F21;
 					};
 				};
@@ -257,7 +292,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B9F51861D870D4B00DB8F21 /* ViewController.swift in Sources */,
+				3B9F51C21D87126300DB8F21 /* RingTip.swift in Sources */,
+				3BD8C4651D90471600608F58 /* ColorfulActivityIndicator.swift in Sources */,
+				3B9F51C31D87126300DB8F21 /* Utility.swift in Sources */,
 				3B9F51841D870D4B00DB8F21 /* AppDelegate.swift in Sources */,
+				3B9F51C01D87126300DB8F21 /* CircularGradient.swift in Sources */,
+				3B9F51C11D87126300DB8F21 /* RingLayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,8 +366,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -349,7 +391,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -372,8 +414,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -389,9 +433,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -401,10 +446,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = MCP73L8734;
 				INFOPLIST_FILE = ColorfulActivityIndicator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = To.ColorfulActivityIndicator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -412,10 +460,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = MCP73L8734;
 				INFOPLIST_FILE = ColorfulActivityIndicator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = To.ColorfulActivityIndicator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -427,6 +478,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = To.ColorfulActivityIndicatorTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ColorfulActivityIndicator.app/ColorfulActivityIndicator";
 			};
 			name = Debug;
@@ -439,6 +491,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = To.ColorfulActivityIndicatorTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ColorfulActivityIndicator.app/ColorfulActivityIndicator";
 			};
 			name = Release;
@@ -450,6 +503,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = To.ColorfulActivityIndicatorUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = ColorfulActivityIndicator;
 			};
 			name = Debug;
@@ -461,6 +515,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = To.ColorfulActivityIndicatorUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = ColorfulActivityIndicator;
 			};
 			name = Release;
@@ -484,6 +539,7 @@
 				3B9F51AA1D870D4B00DB8F21 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3B9F51AB1D870D4B00DB8F21 /* Build configuration list for PBXNativeTarget "ColorfulActivityIndicatorTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +548,7 @@
 				3B9F51AD1D870D4B00DB8F21 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3B9F51AE1D870D4B00DB8F21 /* Build configuration list for PBXNativeTarget "ColorfulActivityIndicatorUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +557,7 @@
 				3B9F51B01D870D4B00DB8F21 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
